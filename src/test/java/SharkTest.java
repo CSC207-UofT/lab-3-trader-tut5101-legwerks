@@ -4,20 +4,20 @@ import static org.junit.Assert.*;
 
 
 public class SharkTest {
-    Shark s;
+    Shark SHARK;
 
     @Before
     public void setUp() {
-        s = new Shark();
+        SHARK = new Shark();
     }
 
     @Test
     public void TestSound() {
-        assertEquals("Shaa~", s.sound());
+        assertEquals("Shaa~", SHARK.sound());
     }
 
     @Test
     public void TestGetPrice() {
-        assertEquals(90, s.getPrice());
+        assertEquals(90, SHARK.getPrice());
     }
 }
